@@ -5,7 +5,7 @@
         {% for blog in posts %}
             <ge.h2> 제목 : {{blog.title}}</h2><br>
             글쓴 날짜 : {{blog.pub_date}}<br>
-            내용 : <a href="{% url 'detail' blog.id %}">상세내용보기</a>
+            내용 : <a href="{% url 'detail' blog.id %}">상세내용보기!!!!!!!!</a>
             <br><br>
         {% endfor %}
 
@@ -23,4 +23,5 @@
         <a href="?page={{posts.paginator.num_pages}}">Last</a>
         {% endif %}
     </div>
+    <p>내가바로정세아</p>
 {% endblock %}
